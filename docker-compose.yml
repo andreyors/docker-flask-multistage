@@ -5,12 +5,20 @@ services:
     image: tianon/true
     volumes:
       - ./:/flask
+      - ./docker/nginx/flask.conf:/etc/nginx/conf.d/flask.conf
+
+  nginx:
+    image: nginx:alpine
+    depends_on:
+      - python
+    ports:
+      - 8080:8080
+    volumes_from:
+      - data
 
   python:
     build: .
-    volumes_from:
-      - data
     ports:
       - 5000:5000
-    environment:
-      - FLASK_APP
+    volumes_from:
+      - data
