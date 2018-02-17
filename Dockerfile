@@ -15,4 +15,4 @@ RUN set -xe \
 
 EXPOSE 5000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "--threads", "2", "app:app"]
+CMD ["gunicorn", "-c", "gunicorn.py", "app:app"]
