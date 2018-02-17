@@ -1,4 +1,7 @@
 from flask import Flask
+from envparse import env
+
+env.read_envfile()
  
 app = Flask(__name__)
  
