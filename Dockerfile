@@ -3,6 +3,7 @@ COPY requirements.txt .
 RUN set -xe \
 	&& pip install -r requirements.txt
 
+
 FROM python:3-alpine
 COPY --from=base /root/.cache /root/.cache
 COPY --from=base requirements.txt /flask/
