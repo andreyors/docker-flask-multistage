@@ -1,4 +1,4 @@
 gunicorn==19.7.1
-flask==1.0.0
+flask==1.0
 aloe==0.1.15
 envparse==0.2.0
