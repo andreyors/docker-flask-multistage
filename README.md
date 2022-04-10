@@ -3,12 +3,19 @@
 
 Minimize size of docker container
 
-## Set up
+You need to run once `cp .env.dist .env`
+
+## Start the local env
 ```
-$ cp .env.dist .env
+make up
+```
+
+To stop the local env:
+```
+make dn
 ```
 
 ## Using
-Open url `http://localhost:5000` in browser
+Open url `http://localhost:8080` in browser
 
 
