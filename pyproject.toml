@@ -10,12 +10,10 @@ gunicorn = "^20.1.0"
 Flask = "^2.1.1"
 envparse = "^0.2.0"
 requests = "^2.27.1"
-pre-commit = "^2.18.1"
 
 [tool.poetry.dev-dependencies]
 behave = "^1.2.6"
-behave-plain-color-formatter = "^0.0.2"
-uvicorn = "^0.17.6"
+pre-commit = "^2.18.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -25,5 +23,5 @@ build-backend = "poetry.core.masonry.api"
 stderr_capture=0
 stdout_capture=0
 
-[tool.behave.formatters]
-plain="behave_plain_color_formatter:PlainColorFormatter"
+[tool.isort]
+known_third_party="behave,requests"
