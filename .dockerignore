@@ -10,7 +10,3 @@
 # Python specific
 __pycache__/
 *.py[cod]
-
-# Project specific
-var/
-!var/logs/.gitkeep
