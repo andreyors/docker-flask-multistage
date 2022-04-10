@@ -23,8 +23,5 @@ services:
     volumes:
       - ./:/flask
 
-volumes:
-  shared:
-
 networks:
   local:
