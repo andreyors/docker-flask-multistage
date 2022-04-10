@@ -24,4 +24,4 @@ stderr_capture=0
 stdout_capture=0
 
 [tool.isort]
-known_third_party="behave,requests"
+known_third_party=["aloe", "behave", "envparse", "flask", "requests"]
