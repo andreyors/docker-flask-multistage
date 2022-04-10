@@ -12,4 +12,5 @@ def step_impl(context, url):
 @then('we receive "{message}"')
 def step_impl(context, message):
     assert context.response.status_code == 200
-    assert str(context.response.content) == message
+    assert context.response.text == message
+
