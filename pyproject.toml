@@ -10,7 +10,7 @@ gunicorn = "^20.1.0"
 Flask = "^2.1.2"
 envparse = "^0.2.0"
 requests = "^2.27.1"
-virtualenv = "^20.14.1"
+virtualenv = "^20.15.0"
 
 [tool.poetry.dev-dependencies]
 behave = "^1.2.6"
